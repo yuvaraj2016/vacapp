@@ -113,7 +113,7 @@
 								</ul>
 							</li>
 							<li>
-								<a href="admin/index.html" target="_blank">Admin</a>
+								<a href="admin/index.php" target="_blank">Admin</a>
 							</li>
 							<li class="login-link">
 								<a href="login.html">Login / Signup</a>
