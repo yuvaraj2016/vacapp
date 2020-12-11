@@ -39,7 +39,7 @@
 			
 				<!-- Logo -->
                 <div class="header-left">
-                    <a href="index.html" class="logo">
+                    <a href="index.html" class="logo" style="margin-top:10px!important;">
 						<!-- <img src="assets/img/logo.png" alt="Logo"> -->
 						<h3>Vaccine App</h3>
 					</a>
