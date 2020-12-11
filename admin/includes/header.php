@@ -1,289 +1,286 @@
-<header class="topbar">
-    <nav class="navbar top-navbar navbar-expand-md navbar-dark">
-        <div class="navbar-header">
-            <!-- This is for the sidebar toggle which is visible on mobile only -->
-            <a class="nav-toggler waves-effect waves-light d-block d-md-none" href="javascript:void(0)">
-                <i class="ti-menu ti-close"></i>
-            </a>
-            <!-- ============================================================== -->
-            <!-- Logo -->
-            <!-- ============================================================== -->
-            <div class="navbar-brand">
-                <a href="dashboard.php" class="logo">
-                    <!-- Logo icon -->
-                    <div class="logo-icon" style="color: #39192a; text-decoration: none;">
-                        <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
-                        <!-- Dark Logo icon -->
-                        <div>  Hridham Travels Suite</div>
-<!--                                <img src="assets/images/logo-icon.png" alt="homepage" class="dark-logo" />
-                         Light Logo icon 
-                        <img src="assets/images/logo-light-icon.png" alt="homepage" class="light-logo" />-->
-                    </div>
-                    <!--End Logo icon -->
-                    <!-- Logo text -->
-                    <span class="logo-text">
-                        <!-- dark Logo text -->
+<!DOCTYPE html>
+<html lang="en">
+    
+<!-- Mirrored from dreamguys.co.in/demo/doccure/admin/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 30 Nov 2019 04:12:20 GMT -->
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+        <title>Doccure - Dashboard</title>
+		
+		<!-- Favicon -->
+        <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+		
+		<!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+		
+		<!-- Fontawesome CSS -->
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+		
+		<!-- Feathericon CSS -->
+        <link rel="stylesheet" href="assets/css/feathericon.min.css">
+		
+		<link rel="stylesheet" href="assets/plugins/morris/morris.css">
+		
+		<!-- Main CSS -->
+        <link rel="stylesheet" href="assets/css/style.css">
+		
+		<!--[if lt IE 9]>
+			<script src="assets/js/html5shiv.min.js"></script>
+			<script src="assets/js/respond.min.js"></script>
+		<![endif]-->
+    </head>
+    <body>
+	
+		<!-- Main Wrapper -->
+        <div class="main-wrapper">
+		
+			<!-- Header -->
+            <div class="header">
+			
+				<!-- Logo -->
+                <div class="header-left">
+                    <a href="index.html" class="logo">
+						<img src="assets/img/logo.png" alt="Logo">
+					</a>
+					<a href="index.html" class="logo logo-small">
+						<img src="assets/img/logo-small.png" alt="Logo" width="30" height="30">
+					</a>
+                </div>
+				<!-- /Logo -->
+				
+				<a href="javascript:void(0);" id="toggle_btn">
+					<i class="fe fe-text-align-left"></i>
+				</a>
+				
+				<div class="top-nav-search">
+					<form>
+						<input type="text" class="form-control" placeholder="Search here">
+						<button class="btn" type="submit"><i class="fa fa-search"></i></button>
+					</form>
+				</div>
+				
+				<!-- Mobile Menu Toggle -->
+				<a class="mobile_btn" id="mobile_btn">
+					<i class="fa fa-bars"></i>
+				</a>
+				<!-- /Mobile Menu Toggle -->
+				
+				<!-- Header Right Menu -->
+				<ul class="nav user-menu">
 
-<!--                                <img src="assets/images/logo-text.png" alt="homepage" class="dark-logo" />
- Light Logo text 
-<img src="assets/images/logo-light-text.png" class="light-logo" alt="homepage" />-->
-                    </span>
-                </a>
+					<!-- Notifications -->
+					<li class="nav-item dropdown noti-dropdown">
+						<a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+							<i class="fe fe-bell"></i> <span class="badge badge-pill">3</span>
+						</a>
+						<div class="dropdown-menu notifications">
+							<div class="topnav-dropdown-header">
+								<span class="notification-title">Notifications</span>
+								<a href="javascript:void(0)" class="clear-noti"> Clear All </a>
+							</div>
+							<div class="noti-content">
+								<ul class="notification-list">
+									<li class="notification-message">
+										<a href="#">
+											<div class="media">
+												<span class="avatar avatar-sm">
+													<img class="avatar-img rounded-circle" alt="User Image" src="assets/img/doctors/doctor-thumb-01.jpg">
+												</span>
+												<div class="media-body">
+													<p class="noti-details"><span class="noti-title">Dr. Ruby Perrin</span> Schedule <span class="noti-title">her appointment</span></p>
+													<p class="noti-time"><span class="notification-time">4 mins ago</span></p>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li class="notification-message">
+										<a href="#">
+											<div class="media">
+												<span class="avatar avatar-sm">
+													<img class="avatar-img rounded-circle" alt="User Image" src="assets/img/patients/patient1.jpg">
+												</span>
+												<div class="media-body">
+													<p class="noti-details"><span class="noti-title">Charlene Reed</span> has booked her appointment to <span class="noti-title">Dr. Ruby Perrin</span></p>
+													<p class="noti-time"><span class="notification-time">6 mins ago</span></p>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li class="notification-message">
+										<a href="#">
+											<div class="media">
+												<span class="avatar avatar-sm">
+													<img class="avatar-img rounded-circle" alt="User Image" src="assets/img/patients/patient2.jpg">
+												</span>
+												<div class="media-body">
+												<p class="noti-details"><span class="noti-title">Travis Trimble</span> sent a amount of $210 for his <span class="noti-title">appointment</span></p>
+												<p class="noti-time"><span class="notification-time">8 mins ago</span></p>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li class="notification-message">
+										<a href="#">
+											<div class="media">
+												<span class="avatar avatar-sm">
+													<img class="avatar-img rounded-circle" alt="User Image" src="assets/img/patients/patient3.jpg">
+												</span>
+												<div class="media-body">
+													<p class="noti-details"><span class="noti-title">Carl Kelly</span> send a message <span class="noti-title"> to his doctor</span></p>
+													<p class="noti-time"><span class="notification-time">12 mins ago</span></p>
+												</div>
+											</div>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="topnav-dropdown-footer">
+								<a href="#">View all Notifications</a>
+							</div>
+						</div>
+					</li>
+					<!-- /Notifications -->
+					
+					<!-- User Menu -->
+					<li class="nav-item dropdown has-arrow">
+						<a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+							<span class="user-img"><img class="rounded-circle" src="assets/img/profiles/avatar-01.jpg" width="31" alt="Ryan Taylor"></span>
+						</a>
+						<div class="dropdown-menu">
+							<div class="user-header">
+								<div class="avatar avatar-sm">
+									<img src="assets/img/profiles/avatar-01.jpg" alt="User Image" class="avatar-img rounded-circle">
+								</div>
+								<div class="user-text">
+									<h6>Ryan Taylor</h6>
+									<p class="text-muted mb-0">Administrator</p>
+								</div>
+							</div>
+							<a class="dropdown-item" href="profile.html">My Profile</a>
+							<a class="dropdown-item" href="settings.html">Settings</a>
+							<a class="dropdown-item" href="login.html">Logout</a>
+						</div>
+					</li>
+					<!-- /User Menu -->
+					
+				</ul>
+				<!-- /Header Right Menu -->
+				
             </div>
-            <!-- ============================================================== -->
-            <!-- End Logo -->
-            <!-- ============================================================== -->
-            <!-- ============================================================== -->
-            <!-- Toggle which is visible on mobile only -->
-            <!-- ============================================================== -->
-            <a class="topbartoggler d-block d-md-none waves-effect waves-light" href="javascript:void(0)" data-toggle="collapse" data-target="#navbarSupportedContent"
-               aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="ti-more"></i>
-            </a>
-        </div>
-        <!-- ============================================================== -->
-        <!-- End Logo -->
-        <!-- ============================================================== -->
-        <div class="navbar-collapse collapse" id="navbarSupportedContent">
-            <!-- ============================================================== -->
-            <!-- toggle and nav items -->
-            <!-- ============================================================== -->
-            <ul class="navbar-nav float-left mr-auto">
-                <!-- <li class="nav-item d-none d-md-block">
-                    <a class="nav-link sidebartoggler waves-effect waves-light" href="javascript:void(0)" data-sidebartype="mini-sidebar">
-                        <i class="mdi mdi-menu font-24"></i>
-                    </a>
-                </li> -->
-                <!-- ============================================================== -->
-                <!-- Search -->
-                <!-- ============================================================== -->
-                <!--                        <li class="nav-item search-box">
-                                            <a class="nav-link waves-effect waves-dark" href="javascript:void(0)">
-                                                <div class="d-flex align-items-center">
-                                                    <i class="mdi mdi-magnify font-20 mr-1"></i>
-                                                    <div class="ml-1 d-none d-sm-block">
-                                                        <span>Search</span>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                            <form class="app-search position-absolute">
-                                                <input type="text" class="form-control" placeholder="Search &amp; enter">
-                                                <a class="srh-btn">
-                                                    <i class="ti-close"></i>
-                                                </a>
-                                            </form>
-                                        </li>-->
-            </ul>
-            <!-- ============================================================== -->
-            <!-- Right side toggle and nav items -->
-            <!-- ============================================================== -->
-            <ul class="navbar-nav float-right">
-                <!-- ============================================================== -->
-                <!-- Messages -->
-                <!-- ============================================================== -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle waves-effect waves-dark" href="" id="2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-<!--                                <i class="font-22 mdi mdi-email-outline"></i>-->
-
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right mailbox animated bounceInDown" aria-labelledby="2">
-<!--                                <span class="with-arrow">
-                            <span class="bg-danger"></span>-->
-                        <!--                                </span>-->
-                        <!--                                <ul class="list-style-none">
-                                                            <li>
-                                                                <div class="drop-title text-white bg-danger">
-                                                                    <h4 class="m-b-0 m-t-5">5 New</h4>
-                                                                    <span class="font-light">Messages</span>
-                                                                </div>
-                                                            </li>
-                                                            <li>
-                                                                <div class="message-center message-body">
-                                                                     Message 
-                                                                    <a href="javascript:void(0)" class="message-item">
-                                                                        <span class="user-img">
-                                                                            <img src="assets/images/users/1.jpg" alt="user" class="rounded-circle">
-                                                                            <span class="profile-status online pull-right"></span>
-                                                                        </span>
-                                                                        <div class="mail-contnet">
-                                                                            <h5 class="message-title">Pavan kumar</h5>
-                                                                            <span class="mail-desc">Just see the my admin!</span>
-                                                                            <span class="time">9:30 AM</span>
-                                                                        </div>
-                                                                    </a>
-                                                                     Message 
-                                                                    <a href="javascript:void(0)" class="message-item">
-                                                                        <span class="user-img">
-                                                                            <img src="assets/images/users/2.jpg" alt="user" class="rounded-circle">
-                                                                            <span class="profile-status busy pull-right"></span>
-                                                                        </span>
-                                                                        <div class="mail-contnet">
-                                                                            <h5 class="message-title">Sonu Nigam</h5>
-                                                                            <span class="mail-desc">I've sung a song! See you at</span>
-                                                                            <span class="time">9:10 AM</span>
-                                                                        </div>
-                                                                    </a>
-                                                                     Message 
-                                                                    <a href="javascript:void(0)" class="message-item">
-                                                                        <span class="user-img">
-                                                                            <img src="assets/images/users/3.jpg" alt="user" class="rounded-circle">
-                                                                            <span class="profile-status away pull-right"></span>
-                                                                        </span>
-                                                                        <div class="mail-contnet">
-                                                                            <h5 class="message-title">Arijit Sinh</h5>
-                                                                            <span class="mail-desc">I am a singer!</span>
-                                                                            <span class="time">9:08 AM</span>
-                                                                        </div>
-                                                                    </a>
-                                                                     Message 
-                                                                    <a href="javascript:void(0)" class="message-item">
-                                                                        <span class="user-img">
-                                                                            <img src="assets/images/users/4.jpg" alt="user" class="rounded-circle">
-                                                                            <span class="profile-status offline pull-right"></span>
-                                                                        </span>
-                                                                        <div class="mail-contnet">
-                                                                            <h5 class="message-title">Pavan kumar</h5>
-                                                                            <span class="mail-desc">Just see the my admin!</span>
-                                                                            <span class="time">9:02 AM</span>
-                                                                        </div>
-                                                                    </a>
-                                                                </div>
-                                                            </li>
-                                                            <li>
-                                                                <a class="nav-link text-center link text-dark" href="javascript:void(0);">
-                                                                    <b>See all e-Mails</b>
-                                                                    <i class="fa fa-angle-right"></i>
-                                                                </a>
-                                                            </li>
-                                                        </ul>-->
-                    </div>
-                </li>
-                <!-- ============================================================== -->
-                <!-- End Messages -->
-                <!-- ============================================================== -->
-                <!-- ============================================================== -->
-                <!-- Comment -->
-                <!-- ============================================================== -->
-<!--                <li class="nav-item dropdown border-right">
-                    <a class="nav-link dropdown-toggle waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="mdi mdi-bell-outline font-22"></i>
-                        <span class="badge badge-pill badge-info noti">2</span>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right mailbox animated bounceInDown">
-                        <span class="with-arrow">
-                            <span class="bg-primary"></span>
-                        </span>
-                        <ul class="list-style-none">
-                            <li>
-                                <div class="drop-title bg-primary text-white">
-                                    <h4 class="m-b-0 m-t-5">2 New</h4>
-                                    <span class="font-light">Notifications</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="message-center notifications">
-                                     Message 
-                                    <a href="javascript:void(0)" class="message-item">
-                                        <span class="btn btn-danger btn-circle">
-                                            <i class="fa fa-link"></i>
-                                        </span>
-                                        <div class="mail-contnet">
-                                            <h5 class="message-title">diesel</h5>
-                                            <span class="mail-desc">Please Upload Diesel Value</span>
-                                            <span class="time">9:30 AM</span>
-                                        </div>
-                                    </a>
-                                     Message 
-                                                                                <a href="javascript:void(0)" class="message-item">
-                                                                                    <span class="btn btn-success btn-circle">
-                                                                                        <i class="ti-calendar"></i>
-                                                                                    </span>
-                                                                                    <div class="mail-contnet">
-                                                                                        <h5 class="message-title">Event today</h5>
-                                                                                        <span class="mail-desc">Just a reminder that you have event</span>
-                                                                                        <span class="time">9:10 AM</span>
-                                                                                    </div>
-                                                                                </a>
-                                     Message 
-                                    <a href="javascript:void(0)" class="message-item">
-                                        <span class="btn btn-info btn-circle">
-                                            <i class="ti-settings"></i>
-                                        </span>
-                                        <div class="mail-contnet">
-                                            <h5 class="message-title">Settings</h5>
-                                            <span class="mail-desc">You can customize this template as you want</span>
-                                            <span class="time">9:08 AM</span>
-                                        </div>
-                                    </a>
-                                     Message 
-                                                                                <a href="javascript:void(0)" class="message-item">
-                                                                                    <span class="btn btn-primary btn-circle">
-                                                                                        <i class="ti-user"></i>
-                                                                                    </span>
-                                                                                    <div class="mail-contnet">
-                                                                                        <h5 class="message-title">Pavan kumar</h5>
-                                                                                        <span class="mail-desc">Just see the my admin!</span>
-                                                                                        <span class="time">9:02 AM</span>
-                                                                                    </div>
-                                                                                </a>
-                                </div>
-                            </li>
-                            <li>
-                                <a class="nav-link text-center m-b-5 text-dark" href="javascript:void(0);">
-                                    <strong>Check all notifications</strong>
-                                    <i class="fa fa-angle-right"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>-->
-                <!-- ============================================================== -->
-                <!-- End Comment -->
-                <!-- ============================================================== -->
-                <!-- ============================================================== -->
-                <!-- User profile and search -->
-                <!-- ============================================================== -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle waves-effect waves-dark pro-pic" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="fa fa-user m-r-5 m-l-5"></i>
-                        
-                        <span class="m-l-5 font-medium d-none d-sm-inline-block"><?php echo $_SESSION['alogin'];?><i class="mdi mdi-chevron-down"></i></span>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right user-dd animated flipInY">
-                        <span class="with-arrow">
-                            <span class="bg-primary" style="background-color:#233242!important;"></span>
-                        </span>
-                        <div class="d-flex no-block align-items-center p-15 bg-primary text-white m-b-10" style="background-color:#233242!important;">
-                            <div class="" style="padding-left:15px!important;">
-                                  <i class="fa fa-user m-r-5 m-l-5"></i>
-                            </div>
-                            <div class="m-l-10" style="padding-left:7px!important; padding-top:10px!important;">
-                                        <h5 class="m-b-0"><?php echo $_SESSION['ur'];?></h5>
-                                <p class=" m-b-0"><?php echo $_SESSION['email'];?></p>
-                            </div>
-                        </div>
-                        <!--                                <a class="dropdown-item" href="javascript:void(0)">
-                                                            <i class="ti-user m-r-5 m-l-5"></i> My Profile</a>
-                                                        <a class="dropdown-item" href="javascript:void(0)">
-                                                            <i class="ti-wallet m-r-5 m-l-5"></i> My Balance</a>
-                                                        <a class="dropdown-item" href="javascript:void(0)">
-                                                            <i class="ti-email m-r-5 m-l-5"></i> Inbox</a>
-                                                        <div class="dropdown-divider"></div>-->
-                        <a class="dropdown-item" href="ht-change-password.php">
-                            <i class="ti-settings m-r-5 m-l-5"></i> Change Password</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="logout.php">
-                            <i class="fa fa-power-off m-r-5 m-l-5"></i> Logout</a>
-                        <div class="dropdown-divider"></div>
-<!--                        <div class="p-l-30 p-10">
-                            <a href="javascript:void(0)" class="btn btn-sm btn-success btn-rounded">View Profile</a>
-                        </div>-->
-                    </div>
-                </li>
-                <!-- ============================================================== -->
-                <!-- User profile and search -->
-                <!-- ============================================================== -->
-            </ul>
-        </div>
-    </nav>
-</header>
+			<!-- /Header -->
+			
+			<!-- Sidebar -->
+            <div class="sidebar" id="sidebar">
+                <div class="sidebar-inner slimscroll">
+					<div id="sidebar-menu" class="sidebar-menu">
+						<ul>
+							<li class="menu-title"> 
+								<span>Main</span>
+							</li>
+							<li> 
+								<a href="index.php"><i class="fe fe-home"></i> <span>Dashboard</span></a>
+							</li>
+							<li  class="active"> 
+								<a href="appointment-list.php"><i class="fe fe-layout"></i> <span>Appointments</span></a>
+							</li>
+							<li> 
+								<a href="specialities.html"><i class="fe fe-users"></i> <span>Specialities</span></a>
+							</li>
+							<li> 
+								<a href="doctor-list.html"><i class="fe fe-user-plus"></i> <span>Doctors</span></a>
+							</li>
+							<li> 
+								<a href="patient-list.html"><i class="fe fe-user"></i> <span>Patients</span></a>
+							</li>
+							<li> 
+								<a href="reviews.html"><i class="fe fe-star-o"></i> <span>Reviews</span></a>
+							</li>
+							<li> 
+								<a href="transactions-list.html"><i class="fe fe-activity"></i> <span>Transactions</span></a>
+							</li>
+							<li> 
+								<a href="settings.html"><i class="fe fe-vector"></i> <span>Settings</span></a>
+							</li>
+							<li class="submenu">
+								<a href="#"><i class="fe fe-document"></i> <span> Reports</span> <span class="menu-arrow"></span></a>
+								<ul style="display: none;">
+									<li><a href="invoice-report.html">Invoice Reports</a></li>
+								</ul>
+							</li>
+							<li class="menu-title"> 
+								<span>Pages</span>
+							</li>
+							<li> 
+								<a href="profile.html"><i class="fe fe-user-plus"></i> <span>Profile</span></a>
+							</li>
+							<li class="submenu">
+								<a href="#"><i class="fe fe-document"></i> <span> Authentication </span> <span class="menu-arrow"></span></a>
+								<ul style="display: none;">
+									<li><a href="login.html"> Login </a></li>
+									<li><a href="register.html"> Register </a></li>
+									<li><a href="forgot-password.html"> Forgot Password </a></li>
+									<li><a href="lock-screen.html"> Lock Screen </a></li>
+								</ul>
+							</li>
+							<li class="submenu">
+								<a href="#"><i class="fe fe-warning"></i> <span> Error Pages </span> <span class="menu-arrow"></span></a>
+								<ul style="display: none;">
+									<li><a href="error-404.html">404 Error </a></li>
+									<li><a href="error-500.html">500 Error </a></li>
+								</ul>
+							</li>
+							<li> 
+								<a href="blank-page.html"><i class="fe fe-file"></i> <span>Blank Page</span></a>
+							</li>
+							<li class="menu-title"> 
+								<span>UI Interface</span>
+							</li>
+							<li> 
+								<a href="components.html"><i class="fe fe-vector"></i> <span>Components</span></a>
+							</li>
+							<li class="submenu">
+								<a href="#"><i class="fe fe-layout"></i> <span> Forms </span> <span class="menu-arrow"></span></a>
+								<ul style="display: none;">
+									<li><a href="form-basic-inputs.html">Basic Inputs </a></li>
+									<li><a href="form-input-groups.html">Input Groups </a></li>
+									<li><a href="form-horizontal.html">Horizontal Form </a></li>
+									<li><a href="form-vertical.html"> Vertical Form </a></li>
+									<li><a href="form-mask.html"> Form Mask </a></li>
+									<li><a href="form-validation.html"> Form Validation </a></li>
+								</ul>
+							</li>
+							<li class="submenu">
+								<a href="#"><i class="fe fe-table"></i> <span> Tables </span> <span class="menu-arrow"></span></a>
+								<ul style="display: none;">
+									<li><a href="tables-basic.html">Basic Tables </a></li>
+									<li><a href="data-tables.html">Data Table </a></li>
+								</ul>
+							</li>
+							<li class="submenu">
+								<a href="javascript:void(0);"><i class="fe fe-code"></i> <span>Multi Level</span> <span class="menu-arrow"></span></a>
+								<ul style="display: none;">
+									<li class="submenu">
+										<a href="javascript:void(0);"> <span>Level 1</span> <span class="menu-arrow"></span></a>
+										<ul style="display: none;">
+											<li><a href="javascript:void(0);"><span>Level 2</span></a></li>
+											<li class="submenu">
+												<a href="javascript:void(0);"> <span> Level 2</span> <span class="menu-arrow"></span></a>
+												<ul style="display: none;">
+													<li><a href="javascript:void(0);">Level 3</a></li>
+													<li><a href="javascript:void(0);">Level 3</a></li>
+												</ul>
+											</li>
+											<li><a href="javascript:void(0);"> <span>Level 2</span></a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="javascript:void(0);"> <span>Level 1</span></a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+                </div>
+            </div>
+			<!-- /Sidebar -->
+			
