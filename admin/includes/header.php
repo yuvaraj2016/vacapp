@@ -41,7 +41,7 @@
                 <div class="header-left">
                     <a href="index.html" class="logo">
 						<!-- <img src="assets/img/logo.png" alt="Logo"> -->
-						<h3>Vaccine Appointment</h3>
+						<h3>Vaccine App</h3>
 					</a>
 					<a href="index.html" class="logo logo-small">
 						<img src="assets/img/logo-small.png" alt="Logo" width="30" height="30">
