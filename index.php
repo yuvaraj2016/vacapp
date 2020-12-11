@@ -6,7 +6,7 @@
 
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-		<title>Doccure</title>
+		<title>Vaccine Appointment</title>
 		
 		<!-- Favicons -->
 		<link type="image/x-icon" href="assets/img/favicon.png" rel="icon">
@@ -44,8 +44,10 @@
 								<span></span>
 							</span>
 						</a>
-						<a href="index-2.html" class="navbar-brand logo">
-							<img src="assets/img/logo.png" class="img-fluid" alt="Logo">
+						<a href="index.php" class="navbar-brand logo">
+							<!-- <img src="assets/img/logo.png" class="img-fluid" alt="Logo"> -->
+
+							<h3>Vaccine Appointment</h3>
 						</a>
 					</div>
 					<div class="main-menu-wrapper">
