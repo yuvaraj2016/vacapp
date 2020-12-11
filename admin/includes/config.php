@@ -8,9 +8,9 @@
 
 //prod db
 define('DB_HOST','sql154.main-hosting.eu.');
-define('DB_USER','u968130738_vacapp	');
+define('DB_USER','u968130738_vacapp');
 define('DB_PASS','14!Salem');
-define('DB_NAME','u968130738_vacapp	');
+define('DB_NAME','u968130738_vacapp');
 
 //// Establish database connection.
 try {

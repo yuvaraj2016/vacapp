@@ -5,7 +5,7 @@
 <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-        <title>Doccure - Dashboard</title>
+        <title>Vaccine Appointment - Dashboard</title>
 		
 		<!-- Favicon -->
         <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
@@ -26,7 +26,7 @@
 		
 		<!--[if lt IE 9]>
 			<script src="assets/js/html5shiv.min.js"></script>
-			<script src="assets/js/respond.min.js"></script>
+			<script src="asset/js/respond.min.js"></script>
 		<![endif]-->
     </head>
     <body>
@@ -40,7 +40,8 @@
 				<!-- Logo -->
                 <div class="header-left">
                     <a href="index.html" class="logo">
-						<img src="assets/img/logo.png" alt="Logo">
+						<!-- <img src="assets/img/logo.png" alt="Logo"> -->
+						Vaccine Appointment
 					</a>
 					<a href="index.html" class="logo logo-small">
 						<img src="assets/img/logo-small.png" alt="Logo" width="30" height="30">
