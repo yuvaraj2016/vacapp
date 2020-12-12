@@ -82,12 +82,12 @@ if (isset($_POST['submit'])) {
 				
 				// Compose a simple HTML email message
 				$message = '<html><body>';
-				$message .= '<h1 style="color:#f40;">Dear $name,</h1>';
+				$message .= '<h1 style="color:#f40;">Dear'. $name.'</h1>';
 				$message .= '<p style="color:#080;font-size:18px;">Thank you for choosing us. We are proud to be part of your healthcare team.
 				Once VACCINE APPOINTMENT accepts the appointment you will get an email notification.
 				</p>';
 
-				$message .= '<a style="color:#17D4F4;font-size:18px; font-weight:bold; background-color:black:border-radius:30px;" href="http://vacapp.hridhamtech.com/appointment-scheduler.php">
+				$message .= '<a style="color:#17D4F4;font-size:18px; font-weight:bold; background-color:black;border-radius:30px;text-align:center;" href="http://vacapp.hridhamtech.com/appointment-scheduler.php">
 				Click here to book your app</a>';
 				$message .= '</body></html>';
 				
