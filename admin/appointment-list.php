@@ -64,7 +64,13 @@ if (isset($_POST['submit'])) {
                 $query7->execute();
                 $id = $dbh->lastInsertId();
 
+				if (filter_var($email_id, FILTER_VALIDATE_EMAIL)) {
+					$error = "$email is a valid email address";
 
+					return $error;
+				  } else {
+					echo("$email is not a valid email address");
+				  }
 
 
 				$to = $email_id;
