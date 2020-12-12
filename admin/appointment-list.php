@@ -69,7 +69,7 @@ if (isset($_POST['submit'])) {
 				  } else {
 					$error = $row[$i]."'s $email is a invalid email address";
 
-					return $error;
+					// return $error;
 				  }
 
 
