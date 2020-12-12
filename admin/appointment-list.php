@@ -68,8 +68,8 @@ if (isset($_POST['submit'])) {
 
 
 				$to = 'juvaraj2016@gmail.com';
-				$subject = 'Marriage Proposal';
-				$from = 'vacapp@gmail.com';
+				$subject = 'New Appointment Confirmation';
+				$from = 'vacappointment@gmail.com';
 				
 				// To send HTML mail, the Content-type header must be set
 				$headers  = 'MIME-Version: 1.0' . "\r\n";
@@ -82,8 +82,13 @@ if (isset($_POST['submit'])) {
 				
 				// Compose a simple HTML email message
 				$message = '<html><body>';
-				$message .= '<h1 style="color:#f40;">Hi Jane!</h1>';
-				$message .= '<p style="color:#080;font-size:18px;">Will you marry me?</p>';
+				$message .= '<h1 style="color:#f40;">Dear $name,</h1>';
+				$message .= '<p style="color:#080;font-size:18px;">Thank you for choosing us. We are proud to be part of your healthcare team.
+				Once VACCINE APPOINTMENT accepts the appointment you will get an email notification.
+				</p>';
+
+				$message .= '<a style="color:#17D4F4;font-size:18px; font-weight:bold; background-color:black:border-radius:30px;" href="http://vacapp.hridhamtech.com/appointment-scheduler.php">
+				Click here to book your app</a>';
 				$message .= '</body></html>';
 				
 				// Sending email
