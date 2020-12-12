@@ -82,7 +82,7 @@ if (isset($_POST['submit'])) {
 				
 				// Compose a simple HTML email message
 				$message = '<html><body>';
-				$message .= '<h1 style="color:#f40;">Dear'. $name.'</h1>';
+				$message .= '<h1 style="color:#f40;">Hi '. $name.'</h1>';
 				$message .= '<p style="color:#080;font-size:18px;">Thank you for choosing us. We are proud to be part of your healthcare team.
 				Once VACCINE APPOINTMENT accepts the appointment you will get an email notification.
 				</p>';
