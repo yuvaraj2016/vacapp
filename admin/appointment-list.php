@@ -67,7 +67,7 @@ if (isset($_POST['submit'])) {
 
 
 
-				$to = 'juvaraj2016@gmail.com';
+				$to = $email_id;
 				$subject = 'New Appointment Confirmation';
 				$from = 'vacappointment@gmail.com';
 				
@@ -88,7 +88,7 @@ if (isset($_POST['submit'])) {
 				</p>';
 
 				$message .= '<a style="color:#fff;height:30px!important;margin-left:200px;margin-top:54px;font-size:15px;vertical-align:middle!important;font-weight:bold;background-color:#17D4FC;padding-top:10px;text-align:center;text-decoration:none!important;  display:block;
-				width:250px;" href="http://vacapp.hridhamtech.com/appointment-scheduler.php">
+				width:250px;" href="http://vacapp.hridhamtech.com/calendar.html">
 				Click here to book your app</a>';
 				$message .= '</body></html>';
 				
