@@ -87,7 +87,7 @@ if (isset($_POST['submit'])) {
 				Once VACCINE APPOINTMENT accepts the appointment you will get an email notification.
 				</p>';
 
-				$message .= '<a style="color:#fff;font-size:18px; font-weight:bold; background-color:#17D4F4;border-radius:30px;text-align:center;" href="http://vacapp.hridhamtech.com/appointment-scheduler.php">
+				$message .= '<a style="color:#fff;font-size:18px; font-weight:bold; background-color:#17D4F4;border-radius:20px;padding:15px;text-align:center;" href="http://vacapp.hridhamtech.com/appointment-scheduler.php">
 				Click here to book your app</a>';
 				$message .= '</body></html>';
 				
