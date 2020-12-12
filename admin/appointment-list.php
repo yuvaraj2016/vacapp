@@ -65,11 +65,11 @@ if (isset($_POST['submit'])) {
                 $id = $dbh->lastInsertId();
 
 				if (filter_var($email_id, FILTER_VALIDATE_EMAIL)) {
-					$error = "$email is a valid email address";
+					
+				  } else {
+					$error = $row[$i]."'s $email is a invalid email address";
 
 					return $error;
-				  } else {
-					echo("$email is not a valid email address");
 				  }
 
 
