@@ -103,7 +103,7 @@ if (isset($_POST['submit'])) {
 					$msg = "Appointments Successfully Added";
 					
 				  } else {
-					$error = "Row number $i"."'s $email is a invalid email address";
+					$error = "Row number $i"." has $email_id is a invalid email address";
 
 					// return $error;
 				  }
