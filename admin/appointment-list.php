@@ -65,14 +65,7 @@ if (isset($_POST['submit'])) {
                 $id = $dbh->lastInsertId();
 
 				if (filter_var($email_id, FILTER_VALIDATE_EMAIL)) {
-					
-				  } else {
-					$error = $row[$i]."'s $email is a invalid email address";
-
-					// return $error;
-				  }
-
-
+						
 				$to = $email_id;
 				$subject = 'New Appointment Confirmation';
 				$from = 'vacappointment@gmail.com';
@@ -108,6 +101,13 @@ if (isset($_POST['submit'])) {
 				   
 		
 					$msg = "Appointments Successfully Added";
+					
+				  } else {
+					$error = $row[$i]."'s $email is a invalid email address";
+
+					// return $error;
+				  }
+
 
 			}
 			$i++;
