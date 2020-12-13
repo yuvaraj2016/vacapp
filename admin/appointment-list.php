@@ -107,12 +107,13 @@ if (isset($_POST['submit'])) {
 
 					// return $error;
 				  }
-
-
+					
+				  
+	
 			}
 			$i++;
 			$rowd = $i;
-		}
+				}
 		
 	} catch (Exception $ex) {
 		$error = $ex->getMessage()."<br><h3 style='color:red;'>*Row number ".($rowd+1)." has duplicate records</h3>";;
