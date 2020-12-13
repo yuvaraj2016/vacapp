@@ -1,16 +1,16 @@
 <?php
 
-//local DB credentials.
-define('DB_HOST','localhost');
-define('DB_USER','root');
-define('DB_PASS','');
-define('DB_NAME','vacapp');
+// //local DB credentials.
+// define('DB_HOST','localhost');
+// define('DB_USER','root');
+// define('DB_PASS','');
+// define('DB_NAME','vacapp');
 
 //prod db
-// define('DB_HOST','sql154.main-hosting.eu.');
-// define('DB_USER','u968130738_vacapp');
-// define('DB_PASS','14!Salem');
-// define('DB_NAME','u968130738_vacapp');
+define('DB_HOST','sql154.main-hosting.eu.');
+define('DB_USER','u968130738_vacapp');
+define('DB_PASS','14!Salem');
+define('DB_NAME','u968130738_vacapp');
 
 //// Establish database connection.
 try {
