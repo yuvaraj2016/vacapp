@@ -1,10 +1,10 @@
 <?php
 
 // //local DB credentials.
-define('DB_HOST','localhost');
-define('DB_USER','root');
-define('DB_PASS','');
-define('DB_NAME','vacapp');
+// define('DB_HOST','localhost');
+// define('DB_USER','root');
+// define('DB_PASS','');
+// define('DB_NAME','vacapp');
 
 //prod db
 define('DB_HOST','sql154.main-hosting.eu.');
