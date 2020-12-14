@@ -275,7 +275,7 @@
 										</ul>
 									</li>
 									<li>
-										<a href="javascript:void(0);"> <span>Level 1</span></a>
+										<a href=":void(0);"> <span>Level 1</span></a>
 									</li> -->
 								</ul>
 							</li>
