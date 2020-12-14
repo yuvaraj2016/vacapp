@@ -99,7 +99,7 @@
 									<li><a href="voice-call.html">Voice Call</a></li>
 									<li><a href="video-call.html">Video Call</a></li>
 									<li><a href="search.html">Search Doctors</a></li>
-									<li><a href="calendar.html">Calendar</a></li>
+									<li><a href="calendar.php">Calendar</a></li>
 									<li><a href="components.html">Components</a></li>
 									<li class="has-submenu">
 										<a href="invoices.html">Invoices</a>

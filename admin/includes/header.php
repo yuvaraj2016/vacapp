@@ -171,6 +171,8 @@
 			<!-- /Header -->
 			
 			<!-- Sidebar -->
+			<?php $activePage = basename($_SERVER['PHP_SELF'], ".php"); ?>
+
             <div class="sidebar" id="sidebar">
                 <div class="sidebar-inner slimscroll">
 					<div id="sidebar-menu" class="sidebar-menu">
@@ -178,10 +180,10 @@
 							<li class="menu-title"> 
 								<span>Main</span>
 							</li>
-							<li> 
+							<li class="<?= ($activePage == 'index') ? 'active':''; ?>"> 
 								<a href="index.php"><i class="fe fe-home"></i> <span>Dashboard</span></a>
 							</li>
-							<li  class="active"> 
+							<li class="<?= ($activePage == 'appointment-list') ? 'active':''; ?>"> 
 								<a href="appointment-list.php"><i class="fe fe-layout"></i> <span>Appointments</span></a>
 							</li>
 							<!-- <li> 

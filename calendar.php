@@ -185,7 +185,7 @@
 							<div class="row">
 								<div class="col-md-6 col-lg-6">
 									<div class="copyright-text">
-										<p class="mb-0"><a href="templateshub.net">Templates Hub</a></p>
+										<p class="mb-0"><a href="#">Hridham Technology & Services</a></p>
 									</div>
 								</div>
 								<div class="col-md-6 col-lg-6">
