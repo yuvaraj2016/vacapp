@@ -184,7 +184,7 @@
 							<li  class="active"> 
 								<a href="appointment-list.php"><i class="fe fe-layout"></i> <span>Appointments</span></a>
 							</li>
-							<li> 
+							<!-- <li> 
 								<a href="specialities.html"><i class="fe fe-users"></i> <span>Specialities</span></a>
 							</li>
 							<li> 
@@ -276,7 +276,7 @@
 									</li>
 									<li>
 										<a href="javascript:void(0);"> <span>Level 1</span></a>
-									</li>
+									</li> -->
 								</ul>
 							</li>
 						</ul>
